@@ -24,11 +24,15 @@ inquirer
     }])
     .then(res => {
         res.selection.forEach(query => {
-            if (query === 'conert') {}
+            if (query === 'conert') {
+                concert()
+            }
             if (query === 'spotify') {
                 spotify()
             }
-            if (query === 'movie') {}
+            if (query === 'movie') {
+                movie()
+            }
             if (query === 'random') {}
         })
     })
