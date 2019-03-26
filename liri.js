@@ -2,12 +2,13 @@ require("dotenv").config();
 let inquirer = require("inquirer")
 let movie = require("./movie.js")
 let spotify = require("./spotify.js")
-let conert = require("./concert.js")
+let concert = require("./concert.js")
+let random = require("./random.js")
 
 inquirer
     .prompt([{
         name: 'selection',
-        type: 'checkbox',
+        type: 'list',
         choices: [{
             name: 'Look up a concert',
             value: 'concert'
@@ -18,21 +19,21 @@ inquirer
             name: 'Look up a movie',
             value: 'movie'
         }, {
-            name: 'Look up random',
+            name: 'Do what random.txt says',
             value: 'random'
         }]
     }])
     .then(res => {
-        res.selection.forEach(query => {
-            if (query === 'conert') {
-                concert()
-            }
-            if (query === 'spotify') {
-                spotify()
-            }
-            if (query === 'movie') {
-                movie()
-            }
-            if (query === 'random') {}
-        })
+        if (res.selection === 'concert') {
+            concert()
+        }
+        if (res.selection === 'spotify') {
+            spotify()
+        }
+        if (res.selection === 'movie') {
+            movie()
+        }
+        if (res.selection === 'random') {
+            random()
+        }
     })
