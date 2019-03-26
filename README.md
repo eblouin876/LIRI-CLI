@@ -23,8 +23,7 @@ SPOTIFY_SECRET=your-spotify-secret
 ```
 In the directory, run node liri.js. 
 
-![Image of Concert]
-(./images/concert.gif)
+![Image of Concert](images/concert.gif)
 
 ## Support
 If you come across any bugs or have any suggestions to improve the code, please feel free to comment! I would love to improve the code and this is my first forray into the world of Node
