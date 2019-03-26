@@ -5,12 +5,12 @@
 module.exports = queryBandsInTown
 
 
-function queryBandsInTown(input = "default") {
+function queryBandsInTown(input) {
     let inquirer = require('inquirer')
     let axios = require('axios')
     let moment = require('moment')
 
-    if (input !== "default") {
+    if (input) {
         axios
             .get(`https://rest.bandsintown.com/artists/${input}/events?app_id=codingbootcamp`)
             .then(res => {

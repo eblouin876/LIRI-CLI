@@ -6,11 +6,11 @@
 module.exports = queryOMDB
 
 
-function queryOMDB(input = "default") {
+function queryOMDB(input) {
     let inquirer = require('inquirer')
     let axios = require('axios')
 
-    if (input !== "default") {
+    if (input) {
         axios
             .get(`http://www.omdbapi.com/?apikey=trilogy&t=${input.split(' ').join('+')}`)
             .then(res => {

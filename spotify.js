@@ -5,14 +5,14 @@
 module.exports = querySpotify
 
 
-function querySpotify(input = "default") {
+function querySpotify(input) {
     require("dotenv").config();
     let inquirer = require('inquirer')
     let keys = require("./keys.js");
     let Spotify = require('node-spotify-api')
     var spotify = new Spotify(keys.spotify);
 
-    if (input !== "default") {
+    if (input) {
         spotify.search({
                 type: 'track',
                 query: input,
