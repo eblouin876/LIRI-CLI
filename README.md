@@ -27,7 +27,7 @@ To search for a concert:
 ![Image of Concert](images/concert.gif)
 
 To search for a movie:
-![Image of Moive](images/movie.gif)
+![Image of Moive](images/random.gif)
 
 
 To search for a song:
@@ -35,7 +35,7 @@ To search for a song:
 
 
 To search based on the random.txt file:
-![Image of Random](images/random.gif)
+![Image of Random](images/movie.gif)
 
 
 ## Support
