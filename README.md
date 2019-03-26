@@ -23,7 +23,20 @@ SPOTIFY_SECRET=your-spotify-secret
 ```
 In the directory, run node liri.js. 
 
+To search for a concert:
 ![Image of Concert](images/concert.gif)
+
+To search for a movie:
+![Image of Moive](images/movie.gif)
+
+
+To search for a song:
+![Image of Song](images/song.gif)
+
+
+To search based on the random.txt file:
+![Image of Random](images/random.gif)
+
 
 ## Support
 If you come across any bugs or have any suggestions to improve the code, please feel free to comment! I would love to improve the code and this is my first forray into the world of Node
